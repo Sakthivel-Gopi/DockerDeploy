@@ -9,7 +9,7 @@ pipeline {
 		
 			stage ('deployment') {
 				steps {
-					sh 'docker run -itd --name container1 docker_deploy' 
+					sh 'docker run -itd --name container1 httpd' 
 				}
 			}
 		}
